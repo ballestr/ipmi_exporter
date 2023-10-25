@@ -1,0 +1,8 @@
+## Dell PowerEdge_R6525
+## boardproductname 0DMD2T (y2020q2)
+## ipmi sensor ID map to common labels
+## format: id:label:comment
+3:temp_ambient:
+1:temp_CPU1:
+2:temp_CPU2:
+50:power_system:

@@ -1,0 +1,7 @@
+[Unit]
+Description=Collect ipmitool sensor metrics for prometheus-node-exporter
+
+[Service]
+Type=oneshot
+Environment=TMPDIR=/var/lib/prometheus/node-exporter
+ExecStart=/bin/sh -c "/usr/bin/ipmitool sensor | /usr/share/prometheus-node-exporter/ipmitool | sponge /var/lib/prometheus/node-exporter/ipmitool_sensor.prom"

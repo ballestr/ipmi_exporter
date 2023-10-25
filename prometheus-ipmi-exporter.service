@@ -1,0 +1,12 @@
+[Unit]
+Description=Collect IPMI local metrics
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/ipmisensors.sh
+
+Restart=on-failure
+RestartSec=15s
+
+[Install]
+WantedBy=multi-user.target

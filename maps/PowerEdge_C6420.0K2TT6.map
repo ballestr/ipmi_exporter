@@ -1,0 +1,8 @@
+## Dell PowerEdge_C6420 
+## boardproductname 0JP9TF (y2020)
+## ipmi sensor ID map to common labels
+## format: id:label:comment
+40:temp_ambient:
+43:temp_CPU1:
+44:temp_CPU2:
+85:power_system:
